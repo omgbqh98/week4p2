@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1368" height="768" style="border: 1px solid"></canvas>
+<script>
+    function Circle(x, y, radius) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+
+    }
+
+    function createCircle() {
+        let ctx = document.getElementById("myCanvas").getContext("2d");
+        let radius = Math.floor(Math.random() * 100);
+        let color = randomColor();
+        let x =Math.random()*window.innerWidth
+        let y = Math.random()*window.innerHeight
+        let circle = new Circle(x, y, radius);
+        let circle1 = new Circle(500, 500, 80)
+        ctx.beginPath();
+        ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
+        ctx.arc(circle1.x, circle1.y, circle1.radius, 0, 2 * Math.PI);
+        ctx.fillStyle =color;
+        ctx.fill();
+    }
+
+    function getRandomHex() {
+        return Math.floor(Math.random() * 255);
+    }
+
+    function randomColor() {
+        let red = getRandomHex();
+        let blue = getRandomHex();
+        let green = getRandomHex();
+        return "rgb(" + red + ","+blue+","+green+")";
+    }
+    function muntilCorle(){
+        for (let i = 0; i < 50; i++) {
+            createCircle();
+        }
+    }
+
+    muntilCorle()
+</script>
+</body>
+</html>
