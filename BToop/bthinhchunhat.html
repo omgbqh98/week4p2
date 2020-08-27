@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="chuNhat" width="500" height="600" style="border: 1px chartreuse"></canvas>
+<span id="result"></span>
+<span id="result1"></span>
+<script>
+    function Rectangle(x, y) {
+    this.x=x;
+    this.y=y;
+    this.getAcreage=function (){
+        return this.x*this.y;
+    }
+    this.getPertimeter=function (){
+        return (this.x+this.y)*2;
+    }
+    // this.toString =function (){
+    //     return "Acreage:"+caculate+"pertimeter:"+pertimeter;
+    // }
+    }
+    let rectangle =new Rectangle(200,50);
+    let caculate = rectangle.getAcreage();
+    let pertimeter =rectangle.getPertimeter();
+    // alert("Acreage:"+caculate+"pertimeter:"+pertimeter)
+    document.getElementById("result1").innerHTML=caculate;
+    document.getElementById("result").innerHTML="chu vi"+pertimeter;
+    function createReactangle() {
+        ctx = document.getElementById("chuNhat").getContext('2d');
+        ctx.fillStyle = "rgba(0,200,0,1)";
+        ctx.fillRect(200, 50, rectangle.x, rectangle.y);
+
+    }
+
+    createReactangle()
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Temperature(oc){
+        this.oc =oc;
+
+        this.getConvertF = function (){
+            return (this.oc*1.8)+32;
+        }
+        this.getKenvin=function (){
+            return oc+273;
+        }
+        this.toString=function (){
+            return "chuyển sang f:"+ dooc+"chuyển k:" + dooc1+"<br>"
+        }
+
+    }
+    let doc = new Temperature(1)
+    let doc1 = new Temperature(50)
+    let doc2 = new Temperature(45654)
+
+    let dooc = doc.getConvertF()
+    let dooc1 = doc.getKenvin()
+    document.write(doc)
+    document.write(doc1)
+    document.write(doc2)
+</script>
+</body>
+</html>
