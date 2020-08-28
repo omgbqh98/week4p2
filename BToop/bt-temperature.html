@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<input type="text" id="input" onchange="conVert()">
+<span id="result"></span>
+<span id="result1"></span>
 <body>
 <script>
-    function Temperature(oc){
-        this.oc =oc;
+    function Temperature(oc) {
+        this.oc = oc;
 
-        this.getConvertF = function (){
-            return (this.oc*1.8)+32;
+        this.getConvertF = function () {
+            return (oc * 1.8) + 32;
         }
-        this.getKenvin=function (){
-            return oc+273;
+        this.getKenvin = function () {
+            return this.oc + 273;
         }
-        this.toString=function (){
-            return "chuyển sang f:"+ dooc+"chuyển k:" + dooc1+"<br>"
+        this.toString = function () {
+            return "chuyển sang f:" + dooc + "chuyển k:" + dooc1 + "<br>"
         }
 
     }
-    let doc = new Temperature(1)
-    let doc1 = new Temperature(50)
-    let doc2 = new Temperature(45654)
 
-    let dooc = doc.getConvertF()
-    let dooc1 = doc.getKenvin()
-    document.write(doc)
-    document.write(doc1)
-    document.write(doc2)
+    function conVert() {
+        let c = +document.getElementById("input").value
+        if(c>-250){
+            let doc = new Temperature(c)
+
+            let dooc = doc.getConvertF()
+            let dooc1 = doc.getKenvin()
+            document.getElementById("result").innerHTML ="<br>"+ "dien thich: " + dooc +"<br>"
+            document.getElementById("result1").innerHTML = "chu vi: " + dooc1
+        }else {
+            alert("len ban oi")
+        }
+
+
+    }
+
+
 </script>
 </body>
 </html>

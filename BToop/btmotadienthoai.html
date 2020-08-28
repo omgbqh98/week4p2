@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="send1" >
+<script>
+   function Mobile(id,name){
+       this.id=id;
+       this.name=name;
+       this.message ="";
+       this.setMessage=function (message){
+           this.message=message;
+       }
+       this.getMessage =function (){
+          return this.message;
+       }
+       this.sendMessage=function (message,mobile){
+        mobile.setMessage(message)
+       }
+   }
+   let iphone = new Mobile(1,"Iphone");
+   let samsung = new Mobile(2,"Samsung");
+   iphone.sendMessage("dumamay",samsung);
+   let send= samsung.getMessage();
+   document.write(send)
+</script>
+</body>
+</html>

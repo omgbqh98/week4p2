@@ -22,17 +22,16 @@
     //     return "Acreage:"+caculate+"pertimeter:"+pertimeter;
     // }
     }
-    let rectangle =new Rectangle(200,50);
+    let rectangle =new Rectangle(prompt(),prompt());
     let caculate = rectangle.getAcreage();
     let pertimeter =rectangle.getPertimeter();
     // alert("Acreage:"+caculate+"pertimeter:"+pertimeter)
-    document.getElementById("result1").innerHTML=caculate;
+    document.getElementById("result1").innerHTML="dien tich"+caculate;
     document.getElementById("result").innerHTML="chu vi"+pertimeter;
     function createReactangle() {
         ctx = document.getElementById("chuNhat").getContext('2d');
         ctx.fillStyle = "rgba(0,200,0,1)";
         ctx.fillRect(200, 50, rectangle.x, rectangle.y);
-
     }
 
     createReactangle()
