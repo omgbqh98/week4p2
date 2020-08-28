@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<script src="den.js"></script>
+<script src="pin.js"></script>
+<script>
+    let denPin = new FlashLamp();
+    denPin.setBattery(battery);
+    let pin = new Battery();
+    pin.setEnergy(10);
+
+    document.write("Battery info:" + denPin.getBattery());
+    denPin.light();
+    document.write("turn on <br>")
+    denPin.turnOn();
+    denPin.light();
+    document.write("Battery info:" + denPin.getBattery()+"<br>")
+
+    document.write("turn off <br>")
+    denPin.turnOFF();
+    denPin.light();
+</script>
+</body>
+</html>
