@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    canvas{
+        border: 2px solid blueviolet ;
+    }
+</style>
+
+</head>
+<body>
+<!--<canvas width="400px"; height="400px" id="canvas" style="border: 2px solid blueviolet"></canvas>-->
+<script>
+  // let c =document.getElementById('canvas').value
+  // let ctx = c.getContext('2d')
+  // ctx.beginPath()
+  // ctx.rect(20,30,30,40)
+  // ctx.fillStyle.color='black'
+  // ctx.stroke();
+
+
+  // số hoàn hảo:
+  // function checksohoanhao(number){
+  //    // number = +prompt("input number")
+  //     let sum =0;
+  //     let n =number/2;
+  //     for (let i = 1; i <=n ; i++) {
+  //         if(number%i==0) {
+  //             sum += i;
+  //         }
+  //     }
+  //     if(sum==number){
+  //         return true;
+  // }else {
+  //     return false}
+  // }
+  // if(checksohoanhao(+prompt("input number"))){
+  //     alert("là số hoàn hảo")
+  // }else {
+  //     alert("ko là số hoàn hảo")
+  // }
+
+
+  function findMaxMinus(arr) {
+      if(arr.length==0)
+          alert("Mảng rỗng");
+      let minusArr = [];
+      for (let i = 0; i < arr.length ; i++) {
+          if(arr[i]<0)
+              minusArr.push(arr[i]);
+      }
+      let max = minusArr[0];
+      for (let i = 1; i < minusArr.length; i++) {
+          if(minusArr[i]>max){
+              max = minusArr[i];
+          }
+      }
+      return max;
+  }
+  let arr1=[5,4,6,-5,-4,-1,5]
+document.write(findMaxMinus(arr1))
+
+</script>
+</body>
+</html>

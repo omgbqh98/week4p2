@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Circle</title>
+    <script src="hinhtron.js"></script>
+</head>
+<style>
+    #myCanvas{
+        background-color: bisque;
+    }
+</style>
+<body>
+<canvas id="myCanvas" style="width: 300px" height="300px"></canvas>
+<script>
+    let canvas = document.getElementById("myCanvas");
+
+    let circles = [];
+    function moveCircle() {
+        let ctx = canvas.getContext("2d");
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        for (let i = 0; i < circles.length; i++) {
+            circles[i].move();
+            circles[i].draw(canvas);
+            circles[i].control();
+        }
+
+    }
+
+    function createCircle(number){
+        for (let i = 0; i < number; i++) {
+            let circle = new Circle(Math.random()*500,Math.random()*100,20,"red",5);
+            circles.push(circle);
+        }
+    }
+    createCircle(10);
+    setInterval(moveCircle,100);
+</script>
+</body>
+</html>

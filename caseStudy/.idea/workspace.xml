@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ed7ef37d-0b88-4505-bb36-8c3fd977bfca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../BTcongtacbongden/bongDen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BTcongtacbongden/bongDen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BTcongtacbongden/congTac.js" beforeDir="false" afterPath="$PROJECT_DIR$/../BTcongtacbongden/congTac.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BTcongtacbongden/congtacbongden.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BTcongtacbongden/congtacbongden.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../THoop/thFunnyCircles.html" beforeDir="false" afterPath="$PROJECT_DIR$/../THoop/thFunnyCircles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flashFood.js" beforeDir="false" afterPath="$PROJECT_DIR$/flashFood.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food2.js" beforeDir="false" afterPath="$PROJECT_DIR$/food2.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1gyneQp2UekLOt0JtFG73MnguC8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed7ef37d-0b88-4505-bb36-8c3fd977bfca" name="Default Changelist" comment="" />
+      <created>1599095794509</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599095794509</updated>
+      <workItem from="1599095795520" duration="568000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1599096366062">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1599096366062" />
+  </component>
+</project>

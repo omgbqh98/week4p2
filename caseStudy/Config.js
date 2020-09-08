@@ -1,1 +1,7 @@
-const
+const CANVAS_WIDTH=400;
+const CANVAS_HEIGHT=400;
+const MAX_LENGTH = 3;
+const DEFAULT_SNAKE_X=0;
+const DEFAULT_SNAKE_Y=0;
+const SIZE_SNAKE=20;
+const POINT_ORIGIN=0;
